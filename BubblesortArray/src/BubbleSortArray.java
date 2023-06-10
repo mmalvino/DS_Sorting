@@ -7,9 +7,13 @@ import java.util.Scanner;
 public class BubbleSortArray {
     static int[] array;
 
+    // Bubble sort algorithm implementation
     public static void bubbleSort(int[] array) {
         int n = array.length;
+
+        // Outer loop for iterations
         for (int i = 0; i < n - 1; i++) {
+            // Inner loop for comparisons
             for (int j = 0; j < n - i - 1; j++) {
                 if (array[j] > array[j + 1]) {
                     // Swap array[j] and array[j + 1]
@@ -21,6 +25,7 @@ public class BubbleSortArray {
         }
     }
 
+    // Utility method to print the array
     public static void printArray(int[] array) {
         int n = array.length;
         for (int i = 0; i < n; ++i) {
@@ -29,6 +34,7 @@ public class BubbleSortArray {
         System.out.println();
     }
 
+    // Method to read array from user input
     private static int[] readArrayFromInput() {
         Scanner scanner = new Scanner(System.in);
 
@@ -37,6 +43,8 @@ public class BubbleSortArray {
 
         String[] numbers = input.split(",");
         int[] array = new int[numbers.length];
+
+        // Convert each number from string to int and store in the array
         for (int i = 0; i < numbers.length; i++) {
             array[i] = Integer.parseInt(numbers[i].trim());
         }
@@ -44,17 +52,25 @@ public class BubbleSortArray {
         return array;
     }
 
+    // Method to read array from a file
     private static int[] readArrayFromFile() {
         try {
-            InputStream is = BubbleSortArray.class.getResourceAsStream("test4.txt");
+            // Load the file from resources folder
+            InputStream is = BubbleSortArray.class.getResourceAsStream("test.txt");
             if (is == null) {
                 System.out.println("Failed to locate the file.");
                 return null;
             }
+
+            // Read the file line by line
             BufferedReader reader = new BufferedReader(new InputStreamReader(is));
             String line = reader.readLine();
+
+            // Split the line into numbers
             String[] numbers = line.split(", ");
             int[] array = new int[numbers.length];
+
+            // Convert each number from string to int and store in the array
             for (int i = 0; i < numbers.length; i++) {
                 array[i] = Integer.parseInt(numbers[i]);
             }
@@ -68,7 +84,7 @@ public class BubbleSortArray {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Do you want to provide the number sequence via (F)ile or (M)anually? ");
+        System.out.print("Do you want to print the sorted number sequence via text (F)ile or (M)anually? ");
         String input = scanner.nextLine();
 
         if (input.equalsIgnoreCase("F")) {
@@ -89,9 +105,10 @@ public class BubbleSortArray {
         System.out.println("Original array:");
         printArray(array);
 
-        long startTime = System.nanoTime();
+        // Measure the execution time of bubble sort
+        long startTime = System.nanoTime(); // To switch to milliseconds --> System.currentTimeMillis();
         bubbleSort(array);
-        long endTime = System.nanoTime();
+        long endTime = System.nanoTime(); // To switch to milliseconds --> System.currentTimeMillis();
 
         System.out.println("\nSorted array:");
         printArray(array);

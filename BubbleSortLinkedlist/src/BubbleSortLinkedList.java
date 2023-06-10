@@ -11,7 +11,7 @@ public class BubbleSortLinkedList {
         char option = ' '; // Option selected by the user
 
         // Prompt user for input option
-        System.out.println("Do you want to provide the number sequence via (F)ile or (M)anually?");
+        System.out.println("Do you want to print the sorted number sequence via text (F)ile or (M)anually?");
 
         try {
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
@@ -36,27 +36,30 @@ public class BubbleSortLinkedList {
 
         System.out.println("Original list: " + numbers);
 
-        long startTime = System.nanoTime();
+        long startTime = System.nanoTime(); // To switch to milliseconds --> System.currentTimeMillis();
 
         bubbleSort(numbers);
 
-        long endTime = System.nanoTime();
+        long endTime = System.nanoTime(); // To switch to milliseconds --> System.currentTimeMillis();
         long duration = endTime - startTime;
 
         System.out.println("\nSorted list: " + numbers);
         System.out.println("\nTime taken: " + duration + " nanoseconds.");
     }
 
+    // Method to read numbers from a file
     private static LinkedList<Integer> readNumbersFromFile() {
         LinkedList<Integer> numbers = new LinkedList<>();
 
         try {
-            BufferedReader reader = new BufferedReader(new FileReader("src/test4.txt"));
+            BufferedReader reader = new BufferedReader(new FileReader("src/test.txt"));
             String line;
 
+            // Read the file line by line
             while ((line = reader.readLine()) != null) {
                 String[] numberStrings = line.split(",");
 
+                // Convert each number from string to int and add to the list
                 for (String numString : numberStrings) {
                     numbers.add(Integer.parseInt(numString.trim()));
                 }
@@ -70,6 +73,7 @@ public class BubbleSortLinkedList {
         return numbers;
     }
 
+    // Method to read numbers from manual input
     private static LinkedList<Integer> readNumbersFromManualInput() {
         LinkedList<Integer> numbers = new LinkedList<>();
 
@@ -81,6 +85,7 @@ public class BubbleSortLinkedList {
 
             String[] numberStrings = input.split(",");
 
+            // Convert each number from string to int and add to the list
             for (String numString : numberStrings) {
                 numbers.add(Integer.parseInt(numString.trim()));
             }
@@ -91,12 +96,16 @@ public class BubbleSortLinkedList {
         return numbers;
     }
 
+    // Bubble sort algorithm for linked list
     private static void bubbleSort(LinkedList<Integer> list) {
         int n = list.size();
 
+        // Outer loop for iterations
         for (int i = 0; i < n - 1; i++) {
+            // Inner loop for comparisons
             for (int j = 0; j < n - i - 1; j++) {
                 if (list.get(j) > list.get(j + 1)) {
+                    // Swap elements at indices j and j + 1
                     int temp = list.get(j);
                     list.set(j, list.get(j + 1));
                     list.set(j + 1, temp);
