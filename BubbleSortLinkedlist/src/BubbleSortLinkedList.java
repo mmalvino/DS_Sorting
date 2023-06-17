@@ -36,15 +36,17 @@ public class BubbleSortLinkedList {
 
         System.out.println("Original list: " + numbers);
 
-        long startTime = System.nanoTime(); // To switch to milliseconds --> System.currentTimeMillis();
-
+        long startTime = System.nanoTime();
         bubbleSort(numbers);
-
-        long endTime = System.nanoTime(); // To switch to milliseconds --> System.currentTimeMillis();
-        long duration = endTime - startTime;
+        long endTime = System.nanoTime();
 
         System.out.println("\nSorted list: " + numbers);
-        System.out.println("\nTime taken: " + duration + " nanoseconds.");
+
+        long duration = endTime - startTime;
+        long milliseconds = duration / 1_000_000; // Convert nanoseconds to milliseconds
+
+        System.out.println("\nTime taken: " + duration + " nanoseconds");
+        System.out.println("Time taken: " + milliseconds + " milliseconds");
     }
 
     // Method to read numbers from a file
@@ -52,7 +54,7 @@ public class BubbleSortLinkedList {
         LinkedList<Integer> numbers = new LinkedList<>();
 
         try {
-            BufferedReader reader = new BufferedReader(new FileReader("src/test.txt"));
+            BufferedReader reader = new BufferedReader(new FileReader("src/test15.txt"));
             String line;
 
             // Read the file line by line

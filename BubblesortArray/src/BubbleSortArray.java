@@ -106,14 +106,17 @@ public class BubbleSortArray {
         printArray(array);
 
         // Measure the execution time of bubble sort
-        long startTime = System.nanoTime(); // To switch to milliseconds --> System.currentTimeMillis();
+        long startTime = System.nanoTime();
         bubbleSort(array);
-        long endTime = System.nanoTime(); // To switch to milliseconds --> System.currentTimeMillis();
+        long endTime = System.nanoTime();
 
         System.out.println("\nSorted array:");
         printArray(array);
 
         long duration = endTime - startTime;
+        long milliseconds = duration / 1_000_000; // Convert nanoseconds to milliseconds
+
         System.out.println("\nTime taken: " + duration + " nanoseconds");
+        System.out.println("Time taken: " + milliseconds + " milliseconds");
     }
 }
