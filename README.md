@@ -1,6 +1,27 @@
-# DS_Sorting_FP
+# Bubbling Through Data Structures: LinkedList vs. Array!🫧🫧🐙
+
+## Description
+This Sorting Application is a Java-based program that allows users to sort a sequence of numbers using the Bubble Sort algorithm. It provides two different implementations: one using an array data structure and the other using a linked list data structure. The application offers flexibility in input options, including reading numbers from a text file or entering them manually.
+
+## Installation
+1. Ensure that Java is installed on your system.
+2. Clone or download the project repository from GitHub.
+3. Open the project in your preferred Java development environment.
+
+## Usage
+1. Run the program by executing the main class BubbleSortArray or BubbleSortLinkedList.
+2. Choose the input option by entering 'F' for reading from a file or 'M' for manual input.
+3. If you select 'F', ensure that the test.txt file is present in the project's resources folder. Modify the file or add new test cases as desired.
+4. If you select 'M', enter the numbers separated by commas when prompted.
+5. The program will display the original list of numbers.
+6. It will then execute the Bubble Sort algorithm to sort the numbers.
+6. The sorted list will be displayed, along with the time taken for the sorting process.
+
 
 We have 15 test cases along with the Number of Integers in a Set and also the Range of Integers:
+
+>please note that it will take longer to run as you go further down with the test cases
+
 ```
 test1 = 10 (range: -1000 to 1000)
 test2 = 50 (range: -5000 to 5000)
@@ -18,3 +39,9 @@ test13 = 4000 (range: -400000 to 400000)
 test14 = 4500 (range: -450000 to 450000)
 test15 = 5000 (range: -500000 to 500000)
 ```
+Link to Presentation file: https://www.canva.com/design/DAFlEHLI-Jw/_D5He9JTesG_QvJayK3SXw/edit?utm_content=DAFlEHLI-Jw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
+
+Link to spreadsheet for table and graphs: https://docs.google.com/spreadsheets/d/1cCPV0NII8JvTuK391REeifm5A66U09PZLUsaLHObHUQ/edit?usp=sharing
+
+Link to random number generator: https://www.random.org/integer-sets/
