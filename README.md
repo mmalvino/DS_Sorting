@@ -1,4 +1,9 @@
 # Bubbling Through Data Structures: LinkedList vs. Array!🫧🫧🐙
+**Group members:**
+
+* MICKY MALVINO KUSANDIWINATA - 2602174522
+* CHRISTOFFER RAFFAELO WIJAYA - 2602177051
+* LOUIS RUBY ELSALIM - 2602185431
 
 ## Description
 This Sorting Application is a Java-based program that allows users to sort a sequence of numbers using the Bubble Sort algorithm. It provides two different implementations: one using an array data structure and the other using a linked list data structure. The application offers flexibility in input options, including reading numbers from a text file or entering them manually.
@@ -48,11 +53,11 @@ test15 = 5000 (range: -500000 to 500000)
 > Implementation of Bubble Sort with Linked List
 <img width="723" alt="Screenshot 2023-06-18 at 16 48 50" src="https://github.com/mmalvino/DS_Sorting_FP/assets/114371813/b8ccc48d-ae72-4ef8-adfd-a22c218662b0">
 
-## Links
+## Links to our resources
 
 **Link to Presentation file: https://www.canva.com/design/DAFlEHLI-Jw/_D5He9JTesG_QvJayK3SXw/edit?utm_content=DAFlEHLI-Jw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton**
 
 
 **Link to spreadsheet for table and graphs: https://docs.google.com/spreadsheets/d/1cCPV0NII8JvTuK391REeifm5A66U09PZLUsaLHObHUQ/edit?usp=sharing**
 
-**Link to random number generator: https://www.random.org/integer-sets/**
+**Link to random number generator we used for our test cases: https://www.random.org/integer-sets/**
