@@ -4,9 +4,9 @@
 This Sorting Application is a Java-based program that allows users to sort a sequence of numbers using the Bubble Sort algorithm. It provides two different implementations: one using an array data structure and the other using a linked list data structure. The application offers flexibility in input options, including reading numbers from a text file or entering them manually.
 
 ## Installation
-1. Ensure that Java is installed on your system.
-2. Clone or download the project repository from GitHub.
-3. Open the project in your preferred Java development environment.
+* Ensure that Java is installed on your system.
+* Clone or download the project repository from GitHub.
+* Open the project in your preferred Java development environment.
 
 ## Usage
 1. Run the program by executing the main class BubbleSortArray or BubbleSortLinkedList.
@@ -18,7 +18,7 @@ This Sorting Application is a Java-based program that allows users to sort a seq
 6. The sorted list will be displayed, along with the time taken for the sorting process.
 
 
-We have 15 test cases along with the Number of Integers in a Set and also the Range of Integers:
+We have 15 test cases (.txt files) along with the Number of Integers in a Set and also the Range of Integers:
 
 >please note that it will take longer to run as you go further down with the test cases
 
@@ -39,9 +39,20 @@ test13 = 4000 (range: -400000 to 400000)
 test14 = 4500 (range: -450000 to 450000)
 test15 = 5000 (range: -500000 to 500000)
 ```
-Link to Presentation file: https://www.canva.com/design/DAFlEHLI-Jw/_D5He9JTesG_QvJayK3SXw/edit?utm_content=DAFlEHLI-Jw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+## What to Expect
+> Implementation of Bubble Sort with Array
+<img width="666" alt="Screenshot 2023-06-18 at 16 38 29" src="https://github.com/mmalvino/DS_Sorting_FP/assets/114371813/5934ae35-b3da-4d1b-83c5-b2860194d90f">
+
+<br><br>
+
+> Implementation of Bubble Sort with Linked List
+<img width="723" alt="Screenshot 2023-06-18 at 16 48 50" src="https://github.com/mmalvino/DS_Sorting_FP/assets/114371813/b8ccc48d-ae72-4ef8-adfd-a22c218662b0">
+
+## Links
+
+**Link to Presentation file: https://www.canva.com/design/DAFlEHLI-Jw/_D5He9JTesG_QvJayK3SXw/edit?utm_content=DAFlEHLI-Jw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton**
 
 
-Link to spreadsheet for table and graphs: https://docs.google.com/spreadsheets/d/1cCPV0NII8JvTuK391REeifm5A66U09PZLUsaLHObHUQ/edit?usp=sharing
+**Link to spreadsheet for table and graphs: https://docs.google.com/spreadsheets/d/1cCPV0NII8JvTuK391REeifm5A66U09PZLUsaLHObHUQ/edit?usp=sharing**
 
-Link to random number generator: https://www.random.org/integer-sets/
+**Link to random number generator: https://www.random.org/integer-sets/**
