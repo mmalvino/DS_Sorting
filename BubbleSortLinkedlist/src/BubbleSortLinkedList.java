@@ -1,7 +1,4 @@
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.LinkedList;
 
 public class BubbleSortLinkedList {
@@ -54,7 +51,8 @@ public class BubbleSortLinkedList {
         LinkedList<Integer> numbers = new LinkedList<>();
 
         try {
-            BufferedReader reader = new BufferedReader(new FileReader("src/test15.txt"));
+            InputStream is = BubbleSortLinkedList.class.getResourceAsStream("test.txt");
+            BufferedReader reader = new BufferedReader(new InputStreamReader(is));
             String line;
 
             // Read the file line by line
